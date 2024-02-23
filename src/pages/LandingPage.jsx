@@ -2,6 +2,7 @@ import Header from '../components/header/Header';
 import Container from '../components/container/Container';
 import Hero from '../components/hero/Hero';
 import Footer from '../components/footer/Footer';
+import About from '../components/about/About';
 
 const LandingPage = () => {
   return (
@@ -14,7 +15,7 @@ const LandingPage = () => {
       </section>
       <section id="about" className="section-about">
         <Container>
-          <Hero />
+          <About />
         </Container>
       </section>
       <section id="projects" className="section-projects">

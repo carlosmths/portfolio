@@ -30,6 +30,10 @@
         a {
           font-weight: 700;
 
+          &:visited {
+            color: #000000;
+          }
+
           &:hover,
           &.active {
             color: #40A2D8;

@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -14,5 +19,18 @@ body {
 
   a {
     text-decoration: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 1.25rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
   }
 }

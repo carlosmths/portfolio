@@ -3,4 +3,15 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: #2C3D55;
+}
+
+.section-about {
+  background-color: #F0F0F0;
+}
+
+.theme-dark {
+  &, a {
+    color: #FFFFFF;
+  }
 }

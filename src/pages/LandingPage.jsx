@@ -7,7 +7,7 @@ const LandingPage = () => {
   return (
     <>
       <Header />
-      <section id="home" className="section-home">
+      <section id="home" className="section-home theme-dark">
         <Container>
           <Hero />
         </Container>

@@ -1,0 +1,15 @@
+.social-media {
+  margin-top: 1.5rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 0.625rem;
+    width: 1.875rem;
+    height: 1.875rem;
+
+    &:hover {
+      scale: 1.2 1.2;
+    }
+  }
+}

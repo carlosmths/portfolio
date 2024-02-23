@@ -1,31 +1,33 @@
-import Header from "../components/header/Header";
-import Container from "../components/container/Container";
-import Hero from "../components/hero/Hero";
+import Header from '../components/header/Header';
+import Container from '../components/container/Container';
+import Hero from '../components/hero/Hero';
+import Footer from '../components/footer/Footer';
 
 const LandingPage = () => {
   return (
     <>
       <Header />
-      <section className="section-home">
+      <section id="home" className="section-home">
         <Container>
           <Hero />
         </Container>
       </section>
-      <section className="section-about">
+      <section id="about" className="section-about">
         <Container>
           <Hero />
         </Container>
       </section>
-      <section className="section-projects">
+      <section id="projects" className="section-projects">
         <Container>
           <Hero />
         </Container>
       </section>
-      <section className="section-contact">
+      <section id="contact" className="section-contact">
         <Container>
           <Hero />
         </Container>
       </section>
+      <Footer />
     </>
   )
 }

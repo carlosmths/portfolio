@@ -30,5 +30,13 @@
     display: flex;
     flex: 1;
     flex-direction: column;
+
+    .about-personal-info {
+      .about-data {
+        h4 {
+          margin-bottom: .25rem;
+        }
+      }
+    }
   }
 }

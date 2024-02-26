@@ -28,6 +28,16 @@ const About = () => {
           into captivating digital realities. What sets me apart? I do all this while embracing the remote work lifestyle,
           collaborating seamlessly with teams worldwide to deliver outstanding results.
         </p>
+        <div className="about-personal-info">
+          <div className="about-data">
+            <h4>FULL NAME</h4>
+            <p>Carlos Javier Mathias Carcamo</p>
+          </div>
+          <div className="about-data">
+            <h4>EMAIL</h4>
+            <p>carlosmths@gmail.com</p>
+          </div>
+        </div>
         <a href={CV} download="Carlos Javier Mathias Carcamo - CV.pdf" className="btn">Download CV</a>
       </div>
     </div>

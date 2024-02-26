@@ -1,6 +1,6 @@
-import './Hero.scss';
-import ProfileImage from '../../assets/profile.jpg';
-import SocialMedia from '../social-media/SocialMedia';
+import 'components/hero/Hero.scss';
+import ProfileImage from 'assets/profile.jpg';
+import SocialMedia from 'components/social-media/SocialMedia';
 
 const Hero = () => {
   return (

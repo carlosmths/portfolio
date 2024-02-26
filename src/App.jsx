@@ -1,5 +1,5 @@
-import LandingPage from './pages/LandingPage';
-import './globals/styles/main.scss';
+import LandingPage from 'pages/LandingPage';
+import 'globals/styles/main.scss';
 
 function App() {
   return (

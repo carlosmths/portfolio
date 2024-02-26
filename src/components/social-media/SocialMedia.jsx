@@ -1,6 +1,6 @@
-import './SocialMedia.scss';
-import { ReactComponent as GithubLogo } from '../../assets/logo-github.svg';
-import { ReactComponent as LinkedinLogo } from '../../assets/logo-linkedin.svg';
+import 'components/social-media/SocialMedia.scss';
+import { ReactComponent as GithubLogo } from 'assets/logo-github.svg';
+import { ReactComponent as LinkedinLogo } from 'assets/logo-linkedin.svg';
 
 const SocialMedia = () => {
   return (

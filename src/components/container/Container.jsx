@@ -1,4 +1,4 @@
-import './Container.scss';
+import 'components/container/Container.scss';
 
 const Container = (props) => {
   return (

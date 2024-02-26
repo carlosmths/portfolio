@@ -1,21 +1,34 @@
-import './About.scss';
+import 'components/about/About.scss';
+import Mdp2 from 'assets/mar-del-plata2.jpg';
+import Mdp1 from 'assets/mar-del-plata1.png';
+import CV from 'assets/cv.pdf';
+
+const getYearsOfExperience = () => {
+  const STARTING_YEAR = 2017;
+  const currentYear = new Date().getFullYear();
+  return currentYear - STARTING_YEAR;
+}
 
 const About = () => {
   return (
     <div className="about">
-      <div className="about-images-container"></div>
+      <div className="about-images-container">
+        <img src={Mdp2} className="image-1" alt="Mar del plata" />
+        <img src={Mdp1} className="image-2" alt="Mar del plata" />
+      </div>
       <div className="about-info">
         <h3 className="about-title">ABOUT ME</h3>
         <p>
-          Hey there, I'm Carlos Javier Mathias Carcamo, a dynamic frontend engineer hailing from the vibrant coastal city of Mar del Plata,
-          Buenos Aires, Argentina. With over 7 years of experience in web development, I've had the privilege of crafting exceptional
+          I'm a dynamic frontend engineer hailing from the vibrant coastal city of Mar del Plata,
+          Buenos Aires, Argentina. With {getYearsOfExperience()}+ years of experience in web development, I've had the privilege of crafting exceptional
           digital experiences for leading tech firms.
         </p>
         <p>
-          Fluent in both Spanish and English, I thrive on continuous growth, always pushing boundaries to transform concepts
+          I thrive on continuous growth, always pushing boundaries to transform concepts
           into captivating digital realities. What sets me apart? I do all this while embracing the remote work lifestyle,
           collaborating seamlessly with teams worldwide to deliver outstanding results.
         </p>
+        <a href={CV} download="Carlos Javier Mathias Carcamo - CV.pdf" className="btn">Download CV</a>
       </div>
     </div>
   );

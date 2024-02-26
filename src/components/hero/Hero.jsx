@@ -1,6 +1,7 @@
 import 'components/hero/Hero.scss';
 import ProfileImage from 'assets/profile.jpg';
 import SocialMedia from 'components/social-media/SocialMedia';
+import TechStack from 'components/tech-stack/TechStack';
 
 const Hero = () => {
   return (
@@ -13,6 +14,7 @@ const Hero = () => {
       <div className="column-image">
         <img src={ProfileImage} alt="Profile"></img>
       </div>
+      <TechStack />
     </div>
   );
 }

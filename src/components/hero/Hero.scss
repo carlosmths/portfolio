@@ -1,8 +1,9 @@
 .hero-main {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 6.25rem;
+  gap: 2.25rem 6.25rem;
 
   .column-info {
     flex: 1;

@@ -9,7 +9,7 @@ const SocialMedia = () => {
         <GithubLogo />
       </a>
       <a href="https://www.linkedin.com/in/carlos-javier-mathias-carcamo-91322036/">
-        <LinkedinLogo />
+        <LinkedinLogo />  
       </a>
     </div>
   );

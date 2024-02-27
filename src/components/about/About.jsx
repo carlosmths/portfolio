@@ -35,10 +35,10 @@ const About = () => {
           </div>
           <div className="about-data">
             <h4>EMAIL</h4>
-            <p>carlosmths@gmail.com</p>
+            <a href="mailto:someone@example.com">carlosmths@gmail.com</a>
           </div>
         </div>
-        <a href={CV} download="Carlos Javier Mathias Carcamo - CV.pdf" className="btn">Download CV</a>
+        <a href={CV} download="Carlos Javier Mathias Carcamo - CV.pdf" className="btn">DOWNLOAD CV</a>
       </div>
     </div>
   );

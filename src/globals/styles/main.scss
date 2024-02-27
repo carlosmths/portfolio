@@ -6,12 +6,12 @@
   background-color: #2C3D55;
 }
 
-.section-about {
+.section-about,
+.section-contact {
   background-color: #F0F0F0;
 }
 
 .theme-dark {
-
   &,
   a {
     color: #FFFFFF;
@@ -19,7 +19,6 @@
 }
 
 .btn {
-  backface-visibility: hidden;
   background: #332cf2;
   border: 0;
   border-radius: .375rem;
@@ -30,7 +29,7 @@
   align-items: center;
   justify-content: center;
   font-family: Circular, Helvetica, sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.025rem;
   font-weight: 700;
   letter-spacing: -.01em;
   line-height: 1.3;

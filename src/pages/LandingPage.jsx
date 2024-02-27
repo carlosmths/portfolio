@@ -1,4 +1,5 @@
 import About from "components/about/About";
+import Contact from "components/contact/Contact";
 import Container from "components/container/Container";
 import Footer from "components/footer/Footer";
 import Header from "components/header/Header";
@@ -25,7 +26,7 @@ const LandingPage = () => {
       </section>
       <section id="contact" className="section-contact">
         <Container>
-
+          <Contact />
         </Container>
       </section>
       <Footer />

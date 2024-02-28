@@ -73,3 +73,9 @@
     margin-top: 4.25rem;
   }
 }
+
+@include screen-xs {
+  .btn {
+    width: 100%;
+  }
+}

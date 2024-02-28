@@ -1,3 +1,5 @@
+@use 'globals/styles/_mixins.scss' as *;
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -15,6 +17,10 @@
   .header-logo {
     font-size: 1.375rem;
     font-weight: 700;
+  }
+
+  .burger-menu {
+    display: none;
   }
 
   .header-navigation {
@@ -39,6 +45,56 @@
             color: #40A2D8;
           }
         }
+      }
+    }
+  }
+}
+
+@include screen-sm {
+  .header {
+    padding: 1rem 0.5rem;
+
+    .burger-menu {
+      cursor: pointer;
+      display: block;
+      height: 2.1875rem;
+      width: 2.1875rem;
+
+      &.menu-open {
+        
+      }
+    }
+
+    .header-navigation {
+      display: block;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.1s ease-in-out;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #FFFFFF;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+          width: 100%;
+          text-align: center;
+          padding: 0.25rem;
+          border-top: 1px solid #000000;
+
+          &:last-child {
+            border-bottom: 1px solid #000000;
+          }
+        }
+      }
+
+      &.menu-open {
+        transform: scaleY(1);
       }
     }
   }

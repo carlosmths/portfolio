@@ -1,3 +1,5 @@
+@use 'globals/styles/_mixins.scss' as *;
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -40,6 +42,14 @@
       resize: vertical;
       min-height: 10rem;
       max-height: 18rem;
+    }
+  }
+}
+
+@include screen-sm {
+  .contact-form {
+    .form-group {
+      flex-direction: column;
     }
   }
 }

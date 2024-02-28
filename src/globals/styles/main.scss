@@ -1,9 +1,12 @@
+@use 'globals/styles/_mixins.scss' as *;
+
 .section-home {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   background-color: #2C3D55;
+  margin-top: 5.063rem;
 }
 
 .section-about,
@@ -19,11 +22,11 @@
 }
 
 .btn {
-  background: #332cf2;
+  background: #332CF2;
   border: 0;
   border-radius: .375rem;
   box-sizing: border-box;
-  color: #ffffff;
+  color: #FFFFFF;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -61,5 +64,11 @@
 
   &:active {
     transform: translateY(.125rem);
+  }
+}
+
+@include screen-sm {
+  .section-home {
+    margin-top: 4.25rem;
   }
 }

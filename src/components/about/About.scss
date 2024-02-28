@@ -1,8 +1,10 @@
+@use 'globals/styles/_mixins.scss' as *;
+
 .about {
   display: flex;
   align-items: center;
   gap: 6rem;
-  
+
   .about-images-container {
     position: relative;
     flex: 0 0 24rem;
@@ -33,11 +35,44 @@
 
     .about-personal-info {
       margin-bottom: 1rem;
-      
+
       .about-data {
         h4 {
           margin-bottom: .25rem;
         }
+      }
+    }
+  }
+}
+
+@include screen-sm {
+  .about {
+    gap: 3rem;
+    flex-direction: column;
+
+    .about-images-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      height: unset;
+      flex: 1;
+      gap: 2rem;
+
+      .image-1,
+      .image-2 {
+        position: relative;
+      }
+    }
+  }
+}
+
+@include screen-xs {
+  .about {
+    .about-images-container {
+      .image-1,
+      .image-2 {
+        height: 100%;
+        width: 100%;
       }
     }
   }

@@ -60,16 +60,12 @@
       height: 2.1875rem;
       width: 2.1875rem;
 
-      &.menu-open {
-        
-      }
+      &.menu-open {}
     }
 
     .header-navigation {
       display: block;
       transform: scaleY(0);
-      transform-origin: top;
-      transition: transform 0.1s ease-in-out;
       position: absolute;
       top: 100%;
       left: 0;
@@ -84,7 +80,7 @@
         li {
           width: 100%;
           text-align: center;
-          padding: 0.25rem;
+          padding: 1rem;
           border-top: 1px solid #000000;
 
           &:last-child {
@@ -94,6 +90,8 @@
       }
 
       &.menu-open {
+        transform-origin: top;
+        transition: transform 0.1s ease-in-out;
         transform: scaleY(1);
       }
     }

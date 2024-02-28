@@ -1,3 +1,5 @@
+@use 'globals/styles/_mixins.scss' as *;
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
@@ -36,5 +39,11 @@ body {
 
   p {
     margin-bottom: 1rem;
+  }
+}
+
+@include screen-xs {
+  html {
+    font-size: 14px;
   }
 }

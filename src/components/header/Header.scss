@@ -36,12 +36,11 @@
         a {
           font-weight: 700;
 
-          &:visited {
+          &, &:visited {
             color: #000000;
           }
 
-          &:hover,
-          &.active {
+          &:hover {
             color: #40A2D8;
           }
         }

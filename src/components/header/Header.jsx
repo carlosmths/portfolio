@@ -10,14 +10,13 @@ const Header = () => {
   }
 
   const scrollToSection = (event) => {
+    event.preventDefault();
     const sectionId = event.target.hash;
-    const header = document.querySelector('.header');
     const section = document.querySelector(sectionId);
-    const scrollToPos = section.offsetTop - header.clientHeight;
     window.scrollTo({
-        top: scrollToPos,
+        top: section.offsetTop,
         behavior: 'smooth'
-    })
+    });
 }
 
   return (
@@ -28,7 +27,7 @@ const Header = () => {
       </div>
       <nav className={`header-navigation ${isMenuOpen ? 'menu-open' : ''}`}>
         <ul>
-          <li><a href="#home" className="active" onClick={scrollToSection}>Home</a></li>
+          <li><a href="#home" onClick={scrollToSection}>Home</a></li>
           <li><a href="#about" onClick={scrollToSection}>About</a></li>
           <li><a href="#projects" onClick={scrollToSection}>Projects</a></li>
           <li><a href="#contact" onClick={scrollToSection}>Contact</a></li>

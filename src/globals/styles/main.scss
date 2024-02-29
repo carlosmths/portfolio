@@ -67,6 +67,10 @@
   }
 }
 
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
 @include screen-sm {
   .section-home {
     align-items: flex-start;

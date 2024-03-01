@@ -2,11 +2,11 @@
 
 .section-home {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   min-height: 100vh;
   background-color: #2C3D55;
-  margin-top: 5.063rem;
+  padding-top: 4.15rem;
 }
 
 .section-about,
@@ -22,21 +22,6 @@
 }
 .grecaptcha-badge {
   visibility: hidden;
-}
-
-textarea {
-  font-family: "Tahoma", "Arial", "Arabic Transparent";
-}
-
-input[type=text] {
-  font-family: "Tahoma", "Arial";
-}
-
-@include screen-sm {
-  .section-home {
-    align-items: flex-start;
-    margin-top: 4.25rem;
-  }
 }
 
 @include screen-xs {

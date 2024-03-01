@@ -84,7 +84,11 @@
         padding: 0.5rem;
       }
     }
+  }
+}
 
+@include screen-xs {
+  .contact-form {
     .submit-container {
       flex-direction: column;
       justify-content: center;

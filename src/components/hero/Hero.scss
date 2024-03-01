@@ -38,8 +38,10 @@
   }
 }
 
-@include screen-sm {
+@include screen-md {
   .hero-main {
+    justify-content: center;
+    
     .columns-group {
       flex-direction: column-reverse;
       align-items: center;
@@ -47,6 +49,10 @@
 
       .column-info {
         text-align: center;
+
+        .title {
+          font-size: 2rem;
+        }
       }
 
       .column-image {

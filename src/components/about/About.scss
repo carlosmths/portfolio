@@ -45,7 +45,7 @@
   }
 }
 
-@include screen-sm {
+@include screen-md {
   .about {
     gap: 3rem;
     flex-direction: column;

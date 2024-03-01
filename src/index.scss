@@ -1,4 +1,5 @@
 @use 'globals/styles/_mixins.scss' as *;
+@use 'globals/styles/_fonts.scss' as *;
 
 * {
   margin: 0;
@@ -7,18 +8,21 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   box-sizing: border-box;
+
+  &,
+  textarea,
+  input[type=text] {
+    font-family: $font-family-name, sans-serif;
+  }
 
   a {
     text-decoration: none;
@@ -39,6 +43,12 @@ body {
 
   p {
     margin-bottom: 1rem;
+  }
+}
+
+@include screen-md {
+  html {
+    font-size: 16px;
   }
 }
 

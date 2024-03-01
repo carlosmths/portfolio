@@ -2,6 +2,7 @@ import 'components/about/About.scss';
 import Mdp2 from 'assets/mar-del-plata2.jpg';
 import Mdp1 from 'assets/mar-del-plata1.png';
 import CV from 'assets/cv.pdf';
+import Button from 'components/Button/Button';
 
 const getYearsOfExperience = () => {
   const STARTING_YEAR = 2017;
@@ -38,7 +39,7 @@ const About = () => {
             <a href="mailto:someone@example.com">carlosmths@gmail.com</a>
           </div>
         </div>
-        <a href={CV} download="Carlos Javier Mathias Carcamo - CV.pdf" className="btn">DOWNLOAD CV</a>
+        <Button href={CV} download="Carlos Javier Mathias Carcamo - CV.pdf">DOWNLOAD CV</Button>
       </div>
     </div>
   );

@@ -1,9 +1,11 @@
+import Button from 'components/Button/Button';
 import 'components/contact-form/ContactForm.scss';
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 const ContactForm = () => {
   const { executeRecaptcha } = useGoogleReCaptcha();
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleReCaptchaVerify = useCallback(async (event) => {
     event.preventDefault();
@@ -11,9 +13,10 @@ const ContactForm = () => {
       console.log('Execute recaptcha not yet available');
       return;
     }
-
+    setIsLoading(true);
     const token = await executeRecaptcha('contactForm');
     console.log('TOKEN', token);
+    setIsLoading(false);
   }, [executeRecaptcha]);
 
   return (
@@ -36,7 +39,7 @@ const ContactForm = () => {
         <a href="https://policies.google.com/privacy">Privacy Policy</a> and&nbsp;
         <a href="https://policies.google.com/terms">Terms of Service</a> apply.
       </small>
-      <button type="submit" className="btn">SEND MESSAGE</button>
+      <Button type="submit" isLoading={isLoading}>SEND MESSAGE</Button>
     </form>
   )
 }

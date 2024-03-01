@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="14.4 9.6 200 70" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(0.5859309434890747, 0, 0, 0.854516088962555, 52.22393798828126, 12.72313117980957)" style="">
+    <rect fill="currentColor" stroke="currentColor" stroke-width="15" width="30" height="30" x="31.115" y="22.304">
+      <animate attributeName="opacity" calcMode="spline" dur="2" values="1;0;1;" keySplines=".5 0 .5 1;.5 0 .5 1"
+        repeatCount="indefinite" begin="-.4" />
+    </rect>
+    <rect fill="currentColor" stroke="currentColor" stroke-width="15" width="30" height="30" x="91.115" y="22.304">
+      <animate attributeName="opacity" calcMode="spline" dur="2" values="1;0;1;" keySplines=".5 0 .5 1;.5 0 .5 1"
+        repeatCount="indefinite" begin="-.2" />
+    </rect>
+    <rect fill="currentColor" stroke="currentColor" stroke-width="15" width="30" height="30" x="151.115" y="22.304">
+      <animate attributeName="opacity" calcMode="spline" dur="2" values="1;0;1;" keySplines=".5 0 .5 1;.5 0 .5 1"
+        repeatCount="indefinite" begin="0" />
+    </rect>
+  </g>
+</svg>

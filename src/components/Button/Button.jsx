@@ -9,10 +9,10 @@ const Button = (props) => {
   const { children, href, isLoading, ...attrs } = props;
   return (
     href ?
-      <a className="btn" href={href} {...attrs}>
+      <a className="btn" href={href} {...attrs} disabled={isLoading}>
         {getChildrenOrPreloader(isLoading, children)}
       </a> :
-      <button className="btn" {...attrs}>
+      <button className="btn" {...attrs} disabled={isLoading}>
         {getChildrenOrPreloader(isLoading, children)}
       </button>
   )

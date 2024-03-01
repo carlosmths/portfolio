@@ -44,6 +44,32 @@
       max-height: 18rem;
     }
   }
+
+  .submit-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 700;
+
+    span {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 1s linear;
+
+      &.animate {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      &.success {
+        color: #198754;
+      }
+  
+      &.error {
+        color: #DC3545;
+      }
+    }
+  }
 }
 
 @include screen-sm {
@@ -57,6 +83,11 @@
       textarea {
         padding: 0.5rem;
       }
+    }
+
+    .submit-container {
+      flex-direction: column;
+      justify-content: center;
     }
   }
 }

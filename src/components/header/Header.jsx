@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="header-logo">carlosmths.dev</div>
+      <div className="header-logo">carlosmthsdev</div>
       <div className={`burger-menu ${isMenuOpen ? 'menu-open' : ''}`} onClick={menuOnClick}>
         <BurgerIcon />
       </div>

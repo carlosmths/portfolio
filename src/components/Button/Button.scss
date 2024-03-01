@@ -21,27 +21,33 @@
   width: max-content;
   min-width: 11.25rem;
 
-  &:hover {
-    transform: scale(1.05);
+  &:not(:disabled) {
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:focus {
+      outline: 0 solid transparent;
+    }
+
+    &:focus:before {
+      border-width: .125rem;
+      content: "";
+      left: calc(-1*.375rem);
+      pointer-events: none;
+      position: absolute;
+      top: calc(-1*.375rem);
+      transition: border-radius;
+      user-select: none;
+    }
+
+    &:active {
+      transform: translateY(.125rem);
+    }
   }
 
-  &:focus {
-    outline: 0 solid transparent;
-  }
-
-  &:focus:before {
-    border-width: .125rem;
-    content: "";
-    left: calc(-1*.375rem);
-    pointer-events: none;
-    position: absolute;
-    top: calc(-1*.375rem);
-    transition: border-radius;
-    user-select: none;
-  }
-
-  &:active {
-    transform: translateY(.125rem);
+  &:disabled {
+    background-color: #5B56F4;
   }
 
   svg {

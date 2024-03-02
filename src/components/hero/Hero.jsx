@@ -8,12 +8,20 @@ const Hero = () => {
     <div className="hero-main">
       <div className="columns-group">
         <div className="column-info">
-          <h1 className="title">FRONT-END WEB DEVELOPER</h1>
-          <p className="text">Hi, I'm Carlos Mathias, an enthusiastic front-end web developer based in Mar del Plata, Buenos Aires, Argentina.</p>
+          <h1 className="title">
+            <span>FRONT-END</span>
+            <span>WEB</span>
+            <span>DEVELOPER</span>
+          </h1>
+          <span className="text">Hi, I'm Carlos Mathias,</span>
+          <span className="text">an enthusiastic front-end web developer</span>
+          <span className="text">based in Mar del Plata, Buenos Aires, Argentina.</span>
           <SocialMedia />
         </div>
         <div className="column-image">
-          <img src={ProfileImage} alt="Profile"></img>
+          <div className="image-container">
+            <img src={ProfileImage} alt="Profile"></img>
+          </div>
         </div>
       </div>
       <TechStack />

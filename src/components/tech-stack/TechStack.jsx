@@ -11,7 +11,7 @@ import Tooltip from 'components/tooltip/Tooltip';
 const IconsSlider = () => {
   return (
     <div className="tech-stack">
-      <h4>Tech stack</h4>
+      <h4>TECH STACK</h4>
       <div className="icon-container">
         <Tooltip text="React">
           <ReactIcon />

@@ -8,9 +8,9 @@ import { ReactComponent as TypescriptIcon } from 'assets/icon-typescript.svg';
 import { ReactComponent as AemIcon } from 'assets/icon-aem.svg';
 import Tooltip from 'components/tooltip/Tooltip';
 
-const IconsSlider = () => {
+const IconsSlider = ({ ...attrs }) => {
   return (
-    <div className="tech-stack">
+    <div className="tech-stack" {...attrs}>
       <h4>TECH STACK</h4>
       <div className="icon-container">
         <Tooltip text="React">

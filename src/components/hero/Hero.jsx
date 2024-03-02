@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="hero-main">
       <div className="columns-group">
-        <div className="column-info">
+        <div className="column-info" data-aos="fade-down-right">
           <h1 className="title">
             <span>FRONT-END</span>
             <span>WEB</span>
@@ -18,13 +18,13 @@ const Hero = () => {
           <span className="text">based in Mar del Plata, Buenos Aires, Argentina.</span>
           <SocialMedia />
         </div>
-        <div className="column-image">
+        <div className="column-image" data-aos="fade-left">
           <div className="image-container">
             <img src={ProfileImage} alt="Profile"></img>
           </div>
         </div>
       </div>
-      <TechStack />
+      <TechStack data-aos="fade-up-right"/>
     </div>
   );
 }

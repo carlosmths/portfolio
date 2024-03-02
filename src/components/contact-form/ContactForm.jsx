@@ -5,7 +5,7 @@ import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 import emailjs from '@emailjs/browser';
 import classnames from 'classnames';
 
-const ContactForm = () => {
+const ContactForm = ({ ...attrs }) => {
   const TIME_TO_FADE = 3000;
   const { executeRecaptcha } = useGoogleReCaptcha();
   const [isLoading, setIsLoading] = useState(false);
@@ -54,7 +54,7 @@ const ContactForm = () => {
   }, [executeRecaptcha, sendEmail]);
 
   return (
-    <form ref={formRef} className="contact-form" onSubmit={handleReCaptchaVerify}>
+    <form ref={formRef} className="contact-form" onSubmit={handleReCaptchaVerify} {...attrs}>
       <div className="form-group">
         <div className="form-control">
           <label htmlFor="inputName">Name</label>

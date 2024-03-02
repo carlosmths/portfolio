@@ -13,11 +13,11 @@ const getYearsOfExperience = () => {
 const About = () => {
   return (
     <div className="about">
-      <div className="about-images-container">
+      <div className="about-images-container" data-aos="flip-up">
         <img src={Mdp2} className="image-1" alt="Mar del plata" />
         <img src={Mdp1} className="image-2" alt="Mar del plata" />
       </div>
-      <div className="about-info">
+      <div className="about-info" data-aos="zoom-in">
         <h3 className="about-title">ABOUT ME</h3>
         <p>
           I'm a dynamic frontend engineer hailing from the vibrant coastal city of Mar del Plata,

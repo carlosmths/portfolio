@@ -8,7 +8,7 @@ function App() {
   AOS.init({
     delay: 250,
     once: true,
-    duration: 700
+    duration: 800
   });
 
   return (

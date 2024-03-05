@@ -4,6 +4,7 @@ import Container from "components/container/Container";
 import Footer from "components/footer/Footer";
 import Header from "components/header/Header";
 import Hero from "components/hero/Hero";
+import Projects from "components/projects/Projects";
 
 const LandingPage = () => {
   return (
@@ -21,7 +22,7 @@ const LandingPage = () => {
       </section>
       <section id="projects" className="section-projects">
         <Container>
-
+          <Projects />
         </Container>
       </section>
       <section id="contact" className="section-contact">

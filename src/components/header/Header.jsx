@@ -13,8 +13,9 @@ const Header = () => {
     event.preventDefault();
     const sectionId = event.target.hash;
     const section = document.querySelector(sectionId);
+    const header = document.querySelector('.header');
     window.scrollTo({
-        top: section.offsetTop,
+        top: section.offsetTop - header.clientHeight,
         behavior: 'smooth'
     });
 }

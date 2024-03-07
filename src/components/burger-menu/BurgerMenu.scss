@@ -1,0 +1,39 @@
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 2rem;
+    width: 2.3rem;
+    padding: 0.3rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+
+    div {
+        overflow: hidden;
+        height: .2rem;
+        width: 100%;
+        background-color: #000000;
+        border-radius: 0.2rem;
+        position: relative;
+        transform-origin: center center;
+        transition: all 50ms ease-in-out;
+    }
+
+    &.menu-open {
+        div:nth-child(1) {
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+        }
+
+        div:nth-child(2) {
+            width: 0;
+        }
+
+        div:nth-child(3) {
+            bottom: 50%;
+            transform: translateY(50%) rotate(-45deg);
+        }
+    }
+}

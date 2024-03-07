@@ -31,7 +31,7 @@
       .project-info {
         display: flex;
         flex-direction: column;
-        padding: 1rem;
+        padding: 1rem 0;
 
         .links-container {
           display: flex;
@@ -53,6 +53,10 @@
         &,
         &:nth-child(4n + 1) {
           flex-direction: column;
+        }
+
+        .project-info {
+          padding: 0;
         }
 
         .project-image {

@@ -1,6 +1,6 @@
 import 'components/header/Header.scss';
-import { ReactComponent as BurgerIcon } from 'assets/icon-burger.svg';
 import { useState } from 'react';
+import BurgerMenu from 'components/burger-menu/BurgerMenu';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,9 +23,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-logo">carlosmthsdev</div>
-      <div className={`burger-menu ${isMenuOpen ? 'menu-open' : ''}`} onClick={menuOnClick}>
-        <BurgerIcon />
-      </div>
+      <BurgerMenu isMenuOpen={isMenuOpen} onClick={menuOnClick} />
       <nav className={`header-navigation ${isMenuOpen ? 'menu-open' : ''}`}>
         <ul>
           <li><a href="#home" onClick={scrollToSection}>Home</a></li>

@@ -1,5 +1,9 @@
 @use 'globals/styles/_mixins.scss' as *;
 
+* {
+  transition: transform 50ms ease-in-out;
+}
+
 .section-home {
   display: flex;
   position: relative;

@@ -7,6 +7,7 @@ const getChildrenOrPreloader = (isLoading, children) => {
 
 const Button = (props) => {
   const { children, href, isLoading, ...attrs } = props;
+  
   return (
     href ?
       <a className="btn" href={href} {...attrs} disabled={isLoading}>

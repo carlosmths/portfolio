@@ -1,0 +1,24 @@
+@use 'globals/styles/_mixins.scss' as *;
+
+.action-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &:active,
+  &:visited {
+    color: #000000;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1rem;
+    width: 1rem;
+  }
+}

@@ -3,6 +3,10 @@ import project1Image from 'assets/project-1.jpg';
 import project2Image from 'assets/project-2.jpg';
 import project3Image from 'assets/project-3.jpg';
 import project4Image from 'assets/project-4.jpg';
+import ActionLink from 'components/action-link/ActionLink';
+import { ReactComponent as OpenIcon } from 'assets/icon-open.svg';
+import { ReactComponent as GithubDarkIcon } from 'assets/icon-github-dark.svg';
+import React from 'react';
 
 const Projects = () => {
   const projectsList = [
@@ -41,20 +45,20 @@ const Projects = () => {
       <h3>MY PROJECTS</h3>
       <div className="projects-container">
         {projectsList.map((project, index) =>
-        <>
-          <div className="project-card">
-            <img className="project-image" key={index} src={project.backgroundImage} alt={project.name} />
-            <div className="project-info">
-              <h4>{project.name}</h4>
-              <p>{project.summary}</p>
-              <div className="links-container">
-                <a href={`${project.link}`} target="_blank" rel="noreferrer">Live demo</a>
-                <a href="https://github.com" target="_blank" rel="noreferrer">Source code</a>
+          <React.Fragment key={`project-card-${index}`}>
+            <div className="project-card">
+              <img className="project-image" src={project.backgroundImage} alt={project.name} />
+              <div className="project-info">
+                <h4>{project.name}</h4>
+                <p>{project.summary}</p>
+                <div className="links-container">
+                  <ActionLink href={`${project.link}`} target="_blank" rel="noreferrer" icon={<OpenIcon />}>Live demo</ActionLink>
+                  <ActionLink href={`${project.sourceCodeLink}`} target="_blank" rel="noreferrer" icon={<GithubDarkIcon />}>Source code</ActionLink>
+                </div>
               </div>
             </div>
-          </div>
-          {index < projectsList.length - 1 && <hr />}
-        </>
+            {index < projectsList.length - 1 && <hr />}
+          </React.Fragment>
         )}
       </div>
     </div>

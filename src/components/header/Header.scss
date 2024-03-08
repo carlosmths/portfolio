@@ -1,10 +1,7 @@
 @use 'globals/styles/_mixins.scss' as *;
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2.5rem;
+  height: 4.15rem;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -14,79 +11,85 @@
   border-bottom: 0.0625rem solid #000000;
   background-color: #FFFFFF;
 
-  .header-logo {
-    font-size: 1.375rem;
-    font-weight: 700;
-  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 
-  .burger-menu {
-    display: none;
-  }
+    .header-logo {
+      width: 10rem;
+    }
 
-  .header-navigation {
-    ul {
-      list-style: none;
-      display: flex;
-      padding: 0;
-      margin: 0;
+    .burger-menu {
+      display: none;
+    }
 
-      li {
-        padding: 0 0.625rem;
+    .header-navigation {
+      ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        gap: 0 1rem;
 
-        a {
-          font-weight: 700;
+        li {
+          a {
+            font-weight: 700;
 
-          &, &:visited {
-            color: #000000;
-          }
+            &,
+            &:visited {
+              color: #000000;
+            }
 
-          &:hover {
-            color: #40A2D8;
+            &:hover {
+              color: #40A2D8;
+            }
           }
         }
       }
     }
   }
+
 }
 
 @include screen-md {
   .header {
-    padding: 1rem 0.5rem;
-
-    .burger-menu {
-      display: flex;
-    }
-
-    .header-navigation {
-      display: block;
-      transform: scaleY(0);
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background-color: #FFFFFF;
-
-      ul {
+    .container {
+      .burger-menu {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        li {
-          width: 100%;
-          text-align: center;
-          padding: 1rem;
-          border-top: 1px solid #000000;
-
-          &:last-child {
-            border-bottom: 1px solid #000000;
-          }
-        }
       }
 
-      &.menu-open {
-        transform-origin: top;
-        transition: transform 0.1s ease-in-out;
-        transform: scaleY(1);
+      .header-navigation {
+        display: block;
+        transform: scaleY(0);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+
+        ul {
+          flex-direction: column;
+          align-items: center;
+
+          li {
+            width: 100%;
+            text-align: center;
+            padding: 0.7rem;
+            border-top: 1px solid #000000;
+
+            &:last-child {
+              border-bottom: 1px solid #000000;
+            }
+          }
+        }
+
+        &.menu-open {
+          transform-origin: top;
+          transition: transform 0.1s ease-in-out;
+          transform: scaleY(1);
+        }
       }
     }
   }

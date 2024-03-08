@@ -1,7 +1,12 @@
-$lg: 1199px;
-$md: 991px;
-$sm: 767px;
-$xs: 574px;
+// $lg: 1199px;
+// $md: 991px;
+// $sm: 767px;
+// $xs: 574px;
+
+$lg: 74.9375rem;
+$md: 61.9375rem;
+$sm: 47.9375rem;
+$xs: 35.875rem;
 
 @mixin screen-lg {
   @media screen and (max-width: $lg) {
@@ -24,5 +29,21 @@ $xs: 574px;
 @mixin screen-xs {
   @media screen and (max-width: $xs) {
     @content;
+  }
+}
+
+@mixin horizontal-gutters {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin: 0 auto;
+
+  @include screen-md {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @include screen-xs {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

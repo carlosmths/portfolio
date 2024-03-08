@@ -4,6 +4,10 @@
   transition: transform 50ms ease-in-out;
 }
 
+section {
+  padding: 5rem 0rem;
+}
+
 .section-home {
   display: flex;
   position: relative;
@@ -17,6 +21,7 @@
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  padding: 0;
 
   &::before {
     content: '';
@@ -49,6 +54,13 @@
 
 .grecaptcha-badge {
   visibility: hidden;
+}
+
+@include screen-md {
+  section,
+  section.section-home {
+    padding: 2rem 0rem;
+  }
 }
 
 @include screen-xs {

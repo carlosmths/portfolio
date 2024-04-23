@@ -1,5 +1,5 @@
 import 'components/projects/Projects.scss';
-import project1Image from 'assets/project-1.jpg';
+import cryptoMarketPalaceImg from 'assets/cryptomp.png';
 import project2Image from 'assets/project-2.jpg';
 import project3Image from 'assets/project-3.jpg';
 import project4Image from 'assets/project-4.jpg';
@@ -11,11 +11,11 @@ import React from 'react';
 const Projects = () => {
   const projectsList = [
     {
-      name: "Project 1",
-      summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare risus turpis, scelerisque commodo orci placerat quis. Curabitur maximus accumsan euismod. Sed sed ipsum dignissim purus porta viverra et ac mi. Suspendisse sodales orci ac est bibendum, eget hendrerit orci congue.",
-      link: "https://circle.com",
-      sourceCodeLink: "https://github.com",
-      backgroundImage: project1Image
+      name: "Crypto Market Palace",
+      summary: "The project revolves around a user-friendly interface for exploring and tracking cryptocurrency values. Although it is not a fully functional trading platform, it utilizes APIs to retrieve real-time market data for various cryptocurrencies. With a sleek and responsive design, Cryptomarketpalace offers a glimpse into what a simple cryptocurrency trading website could look like",
+      link: "https://www.cryptomp.carlosmths.com",
+      sourceCodeLink: "https://github.com/carlosmths/cryptomarketpalace",
+      backgroundImage: cryptoMarketPalaceImg
     },
     {
       name: "Project 2",
@@ -37,7 +37,7 @@ const Projects = () => {
       link: "https://hertz.com",
       sourceCodeLink: "https://github.com",
       backgroundImage: project4Image
-    },
+    }
   ]
 
   return (

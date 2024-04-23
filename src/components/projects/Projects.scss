@@ -16,10 +16,10 @@
       }
 
       .project-image {
-        color: #FFFFFF;
+        color: #ffffff;
         width: 45%;
         height: auto;
-        background-color: #2C3D55;
+        background-color: #2c3d55;
         border: 0.1rem solid #181716;
         border-radius: 1rem;
         aspect-ratio: 1.78;
@@ -41,7 +41,6 @@
         }
       }
     }
-
   }
 }
 
@@ -49,7 +48,6 @@
   .projects {
     .projects-container {
       .project-card {
-
         &,
         &:nth-child(4n + 1) {
           flex-direction: column;

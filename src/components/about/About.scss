@@ -26,7 +26,6 @@
     .image-2 {
       right: 0;
     }
-
   }
 
   .about-info {
@@ -39,7 +38,11 @@
 
       .about-data {
         h4 {
-          margin-bottom: .25rem;
+          margin-bottom: 0.25rem;
+        }
+
+        a {
+          font-weight: 700;
         }
       }
     }

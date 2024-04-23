@@ -12,7 +12,7 @@ const Projects = () => {
   const projectsList = [
     {
       name: "Crypto Market Palace",
-      summary: "The project revolves around a user-friendly interface for exploring and tracking cryptocurrency values. Although it is not a fully functional trading platform, it utilizes APIs to retrieve real-time market data for various cryptocurrencies. With a sleek and responsive design, Cryptomarketpalace offers a glimpse into what a simple cryptocurrency trading website could look like",
+      summary: "The project revolves around a user-friendly interface for exploring and tracking cryptocurrency values. Although it is not a fully functional trading platform, it utilizes APIs to retrieve real-time market data for various cryptocurrencies. With a sleek and responsive design, Cryptomarketpalace offers a glimpse into what a simple cryptocurrency trading website could look like.",
       link: "https://www.cryptomp.carlosmths.com",
       sourceCodeLink: "https://github.com/carlosmths/cryptomarketpalace",
       backgroundImage: cryptoMarketPalaceImg

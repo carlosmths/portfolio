@@ -1,8 +1,5 @@
 import 'components/projects/Projects.scss';
 import cryptoMarketPalaceImg from 'assets/cryptomp.png';
-import project2Image from 'assets/project-2.jpg';
-import project3Image from 'assets/project-3.jpg';
-import project4Image from 'assets/project-4.jpg';
 import ActionLink from 'components/action-link/ActionLink';
 import { ReactComponent as OpenIcon } from 'assets/icon-open.svg';
 import { ReactComponent as GithubDarkIcon } from 'assets/icon-github-dark.svg';
@@ -17,27 +14,6 @@ const Projects = () => {
       sourceCodeLink: "https://github.com/carlosmths/cryptomarketpalace",
       backgroundImage: cryptoMarketPalaceImg
     },
-    {
-      name: "Project 2",
-      summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare risus turpis, scelerisque commodo orci placerat quis. Curabitur maximus accumsan euismod. Sed sed ipsum dignissim purus porta viverra et ac mi.",
-      link: "https://teikametrics.com",
-      sourceCodeLink: "https://github.com",
-      backgroundImage: project2Image
-    },
-    {
-      name: "Project 3",
-      summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare risus turpis, scelerisque commodo orci placerat quis. Curabitur maximus accumsan euismod. Sed sed ipsum dignissim purus porta viverra et ac mi.",
-      link: "https://binance.com",
-      sourceCodeLink: "https://github.com",
-      backgroundImage: project3Image
-    },
-    {
-      name: "Project 4",
-      summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare risus turpis, scelerisque commodo orci placerat quis. Curabitur maximus accumsan euismod. Sed sed ipsum dignissim purus porta viverra et ac mi.",
-      link: "https://hertz.com",
-      sourceCodeLink: "https://github.com",
-      backgroundImage: project4Image
-    }
   ]
 
   return (
